@@ -1,0 +1,98 @@
+*,
+*::after,
+*::before
+    {margin: 0; border: 0; padding: 0; box-sizing: border-box;}
+html
+    {scroll-behavior: smooth;}
+body
+    {font-family: "Roboto Condensed", sans-serif;
+    font-size: calc(16px + 6*(100vw/900));
+    line-height: 28px;
+    color: #555;}
+.page
+    {min-height: 100vh;
+    position: relative;}
+.wrapper
+    {max-width: 900px;
+    margin: 0 auto;}
+.page .pen
+    {width: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);}
+.wrapper .page p
+    {text-align: center;}
+.by
+    {background-color: rgb(255, 225, 56);
+    border-radius: 100px;
+    text-decoration: none;
+    color:black;}
+.wrapper .page .point
+    {text-decoration: none;
+    color: black;
+    background-color: rgba(43, 228, 241, 0.342);
+    border-radius: 10px;}
+/* ---------------------------Табличная------------------------------------ */
+.page1 .pen .window,
+.page1 .pen .text
+    {width: 50%;
+    padding: 25px;}
+.page1 .pen .window img
+    {width: 100%;
+    object-fit: cover;
+    transition: .5s;}
+.page1 .pen .window img:hover
+    {transform: scale(1.15);}
+.page1 .pen .text a
+    {display: block;
+    text-align: center;}
+.page1 .pen .text h2,
+.page1 .pen .text p
+    {margin: 20px 0;
+    text-align: center;}
+/* ---------------------------Инлайн------------------------------------ */
+.page2 .pen .window,
+.page2 .pen .text
+    {width: 50%;
+    display: inline-block;
+    vertical-align: top;
+    padding: 25px;}
+.page2 .pen .text a
+    {display: block;
+    text-align: center;}
+.page2 .pen .text p
+    {margin: 20px;}
+.page2 .pen .window img
+    {width: 100%;
+    object-fit: cover;
+    transition: .5s;}
+.page2 .pen .window img:hover
+    {transform: scale(1.15);}
+/* ---------------------------Флоат------------------------------------ */
+.page3 .pen .window,
+.page3 .pen .text
+    {vertical-align: top;
+    padding: 25px;}
+.page3 .pen .window
+    {float: left;
+    width: 50%;}
+.page3 .pen .text a
+    {display: block;
+    text-align: center;}
+.page3 .pen .window img
+    {width: 100%;
+    object-fit: cover;
+    transition: .5s;}
+.page3 .text h2,
+.page3 .text p
+    {margin: 20px 0;
+    text-align: center;}
+.page3 .text a
+    {margin: 0 20px;}
+.page3 .pen .window img:hover
+    {transform: scale(1.15);}
+.clearfix::after
+    {content: "";
+    display: block;
+    clear: both;}
